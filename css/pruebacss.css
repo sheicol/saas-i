@@ -83,16 +83,7 @@ header {
     font-weight: bolder;
     margin: 2%;
     padding: 5%;
-    background-color: #1B4F72;
-    /*Telefono*/
-    /*Email*/
-    /*Seleccion de Pais*/
-    /*Tipo de Solicitud*/
-    /*Comentarios*/
-    /*Condiciones de uso*/
-    /*Checkbox*/
-    /*botones de envio*/
-    /*transformaciones para inputs y textarea en class form*/ }
+    background-color: #1B4F72; }
     .gridMain .gridMainForm .form1 {
       grid-area: form1;
       margin: 20px; }
