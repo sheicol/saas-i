@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+:root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Abel', sans-serif;
+  box-sizing: border-box; }
+
+header {
+  background-color: black;
+  width: 100%; }
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    flex: wrap;
+    background-color: black;
+    text-decoration: none;
+    height: 80px;
+    padding: 10px; }
+  header nav a {
+    color: gold;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-top: 20px; }
+    header nav a nav a:hover {
+      color: white; }
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%);
+  grid-template-areas: "section section section section" "main main  main main" "main main main main" "footer footer footer footer"; }
+  .gridContainer section {
+    grid-area: section; }
+    .gridContainer section main {
+      grid-area: main; }
+      .gridContainer section main footer {
+        grid-area: footer; }
+
+.gridSection {
+  display: grid;
+  grid-template-areas: "gridSection gridSection gridSection gridSection";
+  background-image: linear-gradient(to right, #1B4F72, #5DADE2, #AED6F1); }
+  .gridSection .gridSectionSlogan {
+    grid-area: slogan;
+    text-transform: uppercase;
+    font-size: large;
+    margin-top: 80px;
+    animation-name: slogan;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s; }
+
+@keyframes slogan {
+  0% {
+    color: yellow; }
+  25% {
+    color: gold;
+    font-weight: 400;
+    font-size: large; }
+  50% {
+    color: lightgoldenrodyellow;
+    font-size: x-large;
+    font-weight: 700;
+    animation-direction: reverse; }
+  75% {
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+    animation-direction: reverse; }
+  100% {
+    color: whitesmoke;
+    font-size: xx-large;
+    font-weight: 900;
+    animation-direction: reverse; } }
+
+.gridMain {
+  display: grid;
+  grid-template-areas: "gridMain gridMain gridMain gridMain" "gridMain gridMain gridMain gridMain";
+  background-color: #feff00; }
+  .gridMain .gridMainForm {
+    display: gridMainForm;
+    font-weight: bolder;
+    margin: 2%;
+    padding: 5%;
+    background-color: #1B4F72;
+    /*Telefono*/
+    /*Email*/
+    /*Seleccion de Pais*/
+    /*Tipo de Solicitud*/
+    /*Comentarios*/
+    /*Condiciones de uso*/
+    /*Checkbox*/
+    /*botones de envio*/
+    /*transformaciones para inputs y textarea en class form*/ }
+    .gridMain .gridMainForm .form1 {
+      grid-area: form1;
+      margin: 20px; }
+    .gridMain .gridMainForm .form2 {
+      grid-area: form2;
+      margin: 20px; }
+    .gridMain .gridMainForm .form3 {
+      grid-area: form3;
+      margin: 20px; }
+    .gridMain .gridMainForm .form4 {
+      grid-area: form4;
+      margin: 20px; }
+    .gridMain .gridMainForm .form5 {
+      grid-area: form5;
+      margin: 20px; }
+    .gridMain .gridMainForm .form6 {
+      grid-area: form6;
+      margin: 20px 20px 20px 20px; }
+    .gridMain .gridMainForm .form6c {
+      grid-area: form6c;
+      margin: 0px 20px 20px 20px; }
+    .gridMain .gridMainForm .form7 {
+      grid-area: form6;
+      margin: 20px; }
+    .gridMain .gridMainForm .form8 {
+      grid-area: form6;
+      margin: 20px;
+      text-align: center; }
+    .gridMain .gridMainForm input:hover {
+      border-color: #feff00;
+      border-radius: 5px; }
+    .gridMain .gridMainForm input:focus {
+      transform: scale(2px, 2px);
+      color: #feff00; }
+    .gridMain .gridMainForm textarea:hover {
+      border-color: #feff00;
+      border-radius: 5px; }
+    .gridMain .gridMainForm textarea:focus {
+      transform: scale(2px, 2px);
+      color: #feff00; }
+
+.gridMainEs {
+  display: gridMainEs;
+  width: 280px;
+  height: 180px;
+  padding: 2%;
+  margin-top: 80%;
+  margin-left: 5%; }
+
+.gridFooter {
+  display: grid;
+  grid-template-areas: "gridFooter gridFooter gridFooter gridFooter gridFooter";
+  justify-content: space-around;
+  background-image: linear-gradient(to right, #1B4F72, #5DADE2, #AED6F1); }
+  .gridFooter .gridFooterUno {
+    display: footer;
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    padding: 30px; }
+  .gridFooter .gridFooterDos {
+    grid-area: footer;
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    padding: 30px; }
+  .gridFooter .gridFooterTres {
+    grid-area: footer;
+    margin: 100px;
+    font-size: xx-large;
+    color: black;
+    font-weight: 900;
+    padding: 30px; }

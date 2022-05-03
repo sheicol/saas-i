@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+:root {
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel', sans-serif;
+    box-sizing: border-box;
+}
+@import "componentes/header";
+@import "componentes/grids";
+@import "componentes/section";
+@import "componentes/main";
+@import "componentes/footer";

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Le-Pew English</title>
+    <link rel="stylesheet" href="/css/pruebacss.css">
+</head>
+
+<body>
+    <!--HEADER (estilizado con flex-box y box-modeling)-->
+    <header class="header">
+        <!--NAV A-->
+        <nav class="nav">
+            <!--menu principal, NAV A-->
+            <a href="../index.html">Inicio</a>
+            <a href="./pages/Curso.html">Curso</a>
+            <a href="./pages/Comenzar.html">Comenzar</a>
+            <a href="./pages/Acceso.html">Acceso</a>
+        </nav>
+    </header>
+    <!--SECTION, primera parte de GRID, LOGO DE LA ACADEMIA-->
+    <section class="gridSection">
+        <h1 class="gridSectionSlogan">Queremos Acompañarte!<h1>
+    </section>
+    <!--COMiENZO DE MAIN. segunda parte de  GRIS-->
+    <main class="gridMain">
+        <div>
+            <img class="gridMainEs" src="multimedia/estudioytrabajo.jpg" alt="estudioytrabajo">
+        </div>
+        <!--SEGUNDA PARTE DE MAIN, FORM-->
+        <form class="gridMainForm">
+            <!--info del formulario-->
+            <fieldset>
+                <legend>Dejanos tus datos</legend>
+                <div class="form1">
+                    <label for="nombre_telefono">Nombre</label>
+                    <input type="text" name="Nombre" placeholder="Nombre">
+                </div>
+                <div class="form2">
+                    <label for="nombre_telefono">Telefono</label>
+                    <input type="text" name="Telefono" placeholder="Telefono">
+                </div>
+                <div class="form2">
+                    <label for="Correo Electronico"> Correo Electronico</label>
+                    <input type="text" name="E-mail" placeholder="Correo Electronico">
+                </div>
+                <div class="form4">
+                    <select name="Pais">
+                        <option value="Seleccionar Pais">Seleccionar Pais</option>
+                        <option value="A">Argentina</option>
+                        <option value="B">Bolivia</option>
+                        <option value="C">Colombia</option>
+                        <option value="D">Peru</option>
+                        <option value="E">Venezuela</option>
+                    </select>
+                </div>
+                <div class="form5">
+                    <select name="Solicitud">
+                        <option value="Tipo de Solicitud">Tipo de Solicitud</option>
+                        <option value="C">Cotizacion</option>
+                        <option value="A">Academico</option>
+                        <option value="SC">Servicio al Cliente</option>
+                        <option value="C">Cobranzas</option>
+                    </select>
+                </div>
+                <div class="form6">Comentarios</div>
+                <textarea class="form6c" form name="text" cols="60" rows="5"></textarea>
+                <div class="form7">Acepto los terminos y condiciones de uso.
+                    <input type="checkbox" value="Check">
+                </div>
+                <div class="form8"><input type="reset" value="Limpiar formulario"></div>
+                <div class="form8"><input type="submit" value="Enviar formulario"></div>
+            </fieldset>
+        </form>
+        <!--FORM maquetado con BOOTSTRAP-->
+        <form class="gridMainForm">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </main>
+    <!--FOOTER (con iconos de redes sociales e email de contacto)-->
+    <footer class="gridFooter">
+        <span>
+            <img class="gridFooterUno" src="./multimedia/instaicon.png">
+        </span>
+        <span>
+            <img class="gridFooterDos" src="./multimedia/fbicon.png">
+        </span>
+        <span>
+            <p class="gridFooterTres">Informacion de contacto: <a
+                    href="Le-PewEnglish@gmail.com">Le-PewEnglish@gmail.com</a></p>
+        </span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

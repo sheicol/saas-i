@@ -1,0 +1,95 @@
+.gridMain {
+    display: grid;
+    grid-template-areas:
+        "gridMain gridMain gridMain gridMain"
+        "gridMain gridMain gridMain gridMain";
+    background-color: #feff00;
+    .gridMainForm {
+        display: gridMainForm;
+        font-weight: bolder;
+        margin: 2%;
+        padding: 5%;
+        background-color: #1B4F72;
+        .form1 {
+            grid-area: form1;
+            margin: 20px;
+        }
+        
+        /*Telefono*/
+        .form2 {
+            grid-area: form2;
+            margin: 20px;
+        }
+        
+        /*Email*/
+        .form3 {
+            grid-area: form3;
+            margin: 20px;
+        }
+        
+        /*Seleccion de Pais*/
+        .form4 {
+            grid-area: form4;
+            margin: 20px;
+        }
+        
+        /*Tipo de Solicitud*/
+        .form5 {
+            grid-area: form5;
+            margin: 20px;
+        }
+        
+        /*Comentarios*/
+        .form6 {
+            grid-area: form6;
+            margin: 20px 20px 20px 20px;
+        }
+        
+        /*Condiciones de uso*/
+        .form6c {
+            grid-area: form6c;
+            margin: 0px 20px 20px 20px;
+        }
+        
+        /*Checkbox*/
+        .form7 {
+            grid-area: form6;
+            margin: 20px;
+        }
+        
+        /*botones de envio*/
+        .form8 {
+            grid-area: form6;
+            margin: 20px;
+            text-align: center;
+        }
+        
+        /*transformaciones para inputs y textarea en class form*/
+        input:hover {
+            border-color: #feff00;
+            border-radius: 5px;
+        }
+        
+        input:focus {
+            transform: scale(2px, 2px);
+            color: #feff00;
+        }
+        
+        textarea:hover {
+            border-color: #feff00;
+            border-radius: 5px;
+        }
+        
+        textarea:focus {
+            transform: scale(2px, 2px);
+            color: #feff00;
+        }        
+    }
+        }
+        .gridMainEs {
+            display: gridMainEs;
+            width: 280px;
+            height: 180px;
+            padding: 2%;
+            margin-top: 80%;
+            margin-left: 5%;}

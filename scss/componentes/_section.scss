@@ -1,0 +1,47 @@
+.gridSection {
+    display: grid;
+    grid-template-areas: "gridSection gridSection gridSection gridSection";
+    background-image: linear-gradient(to right, #1B4F72, #5DADE2, #AED6F1);
+.gridSectionSlogan {
+    grid-area: slogan;
+    text-transform: uppercase;
+    font-size: large;
+    margin-top: 80px;
+    animation-name: slogan;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+        }
+    }
+    @keyframes slogan {
+        0% {
+            color: yellow;
+        }
+    
+        25% {
+            color: gold;
+            font-weight: 400;
+            font-size: large;
+        }
+    
+        50% {
+            color: lightgoldenrodyellow;
+            font-size: x-large;
+            font-weight: 700;
+            animation-direction: reverse;
+        }
+    
+        75% {
+            color: white;
+            font-size: x-large;
+            font-weight: 700;
+            animation-direction: reverse;
+        }
+    
+        100% {
+            color: whitesmoke;
+            font-size: xx-large;
+            font-weight: 900;
+            animation-direction: reverse;
+        }
+    }

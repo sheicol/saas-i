@@ -1,0 +1,28 @@
+.gridFooter {
+    display: grid;
+    grid-template-areas: "gridFooter gridFooter gridFooter gridFooter gridFooter";
+    justify-content: space-around;
+    background-image: linear-gradient(to right, #1B4F72, #5DADE2, #AED6F1);
+    .gridFooterUno {
+        display: footer;
+        width: 100px;
+        height: 100px;
+        margin: 100px;
+        padding: 30px;
+    }
+    .gridFooterDos {
+        grid-area: footer;
+        width: 100px;
+        height: 100px;
+        margin: 100px;
+        padding: 30px;
+    }
+    .gridFooterTres {
+        grid-area: footer;
+        margin: 100px;
+        font-size: xx-large;
+        color: black;
+        font-weight: 900;
+        padding: 30px;
+    }
+}
